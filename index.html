@@ -21,30 +21,29 @@
     />
 
     <link rel="stylesheet" type="text/css" href="./assets/styles/index.css" />
-    <title>Lista de compras</title>
+    <title>Shopping List</title>
   </head>
   <body>
     <div class="container mt-5">
       <div class="row d-flex justify-content-center">
         <div class="col-6">
           <h1 class="mb-5">
-            <i class="fas fa-shopping-basket"></i> Lista de compras
+            <i class="fas fa-shopping-basket"></i> Shopping List
           </h1>
 
-          <ul id="ul" class="list-group">
+          <ul id="list" class="list-group">
             <li class="list-group-item d-flex justify-content-between">
-              Banana <button class="btn btn btn-danger">-</button>
-            </li>
-            <li class="list-group-item d-flex justify-content-between">
-              Pão <button class="btn btn btn-danger">-</button>
-            </li>
-            <li class="list-group-item d-flex justify-content-between">
-              Acúcar <button class="btn btn btn-danger">-</button>
-            </li>
-            <li class="list-group-item d-flex justify-content-between">
-              Café <button class="btn btn btn-danger">-</button>
+              delete this item
+              <button class="btn btn btn-danger">Delete</button>
             </li>
           </ul>
+        </div>
+        <div>
+          <input
+            id="inputNewItem"
+            class="input-group input-group-sm mb-3 mt-5"
+          />
+          <button id="btnNewItem" class="btn btn-primary mt-2">Add</button>
         </div>
       </div>
     </div>
